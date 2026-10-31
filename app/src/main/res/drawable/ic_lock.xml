@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Padlock in the style of the top bar's solid white icons: a slim rounded shackle over a solid body with a
+     soft white-to-silver sheen, and a keyhole cut through it. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Shackle: one round-capped stroke. -->
+    <path
+        android:pathData="M7.75,10.5V7.25A4.25,4.25 0,0 1,16.25 7.25V10.5"
+        android:strokeColor="#FFE9EDF5"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+
+    <!-- Body, with the keyhole (circle and tapered stem) cut out by the even-odd fill. -->
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M7,10H17A2.75,2.75 0,0 1,19.75 12.75V19.25A2.75,2.75 0,0 1,17 22H7A2.75,2.75 0,0 1,4.25 19.25V12.75A2.75,2.75 0,0 1,7 10Z
+            M12,13.6A1.65,1.65 0,0 0,11.15 16.66L10.85,19.1H13.15L12.85,16.66A1.65,1.65 0,0 0,12 13.6Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="12" android:startY="10"
+                android:endX="12" android:endY="22"
+                android:startColor="#FFFFFFFF"
+                android:endColor="#FFC9D1E0" />
+        </aapt:attr>
+    </path>
+</vector>
